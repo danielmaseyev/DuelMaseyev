@@ -1,4 +1,4 @@
-package DuelMaseyev;
+package duelMaseyev;
 
 public interface Dueler {
 	
