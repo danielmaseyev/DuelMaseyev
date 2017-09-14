@@ -2,6 +2,7 @@ package duelMaseyev;
 
 public interface Dueler {
 
+
 	
 	//print a taunt
 	//later: the taunt must be different each time the method is called
@@ -15,3 +16,15 @@ public interface Dueler {
 	//returns the value of HP, can be called as often as anyone wants
 	int getHP();
 }
+
+	
+	//print a taunt
+	//later: the taunt must be different each time the method is called
+	void taunt();
+	
+	//returns the name of the Dueler
+	String getName();
+}
+
+
+
