@@ -3,7 +3,7 @@ package duelMaseyev;
 public class CharacterB implements Dueler{
 	
 	int life;
-	public class CharacterB {
+	public class CharacterB() {
 
 	}
 	public void taunt() {
@@ -20,7 +20,18 @@ public class CharacterB implements Dueler{
 		return this.life;
 	}
 	
-
+	//START WORK HERE
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
+		if(d=hp) {
+			return true;
+		}
+	}
+	public int getAction(Object caller) {
+		return caller instanceof a ;
+	}
+	public void hit(Object caller) {
+		return true;
+	}
 
 
 
