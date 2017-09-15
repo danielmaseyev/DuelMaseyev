@@ -13,8 +13,8 @@ public class CharacterB implements Dueler{
 		return "Daniel Eisen";
 	}
 
-	void setStartingHP(int hp) {
-		int.life = hp;
+	public void setStartingHP(int hp) {
+		int life = hp;
 	}
 	public int getHp() {
 		return this.life;
