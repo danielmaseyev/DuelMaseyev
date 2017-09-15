@@ -8,10 +8,14 @@ public class CharacterA implements Dueler
 	}
 	public void taunt()
 	{
-		
+		System.out.print("Go now");
 	}
 	public String getName()
 	{
 		return "Daniel Maseyev";
+	}
+	public setStartingHP() {
+		return hp;
+		
 	}
 }
