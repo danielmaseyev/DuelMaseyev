@@ -2,6 +2,7 @@ package duelMaseyev;
 
 public class CharacterB implements Dueler{
 	
+	int life;
 	public class CharacterB {
 
 	}
@@ -11,4 +12,16 @@ public class CharacterB implements Dueler{
 	public String getName() {
 		return "Daniel Eisen";
 	}
-}
+
+	void setStartingHP(int hp) {
+		int.life = hp;
+	}
+	public int getHp() {
+		return this.life;
+	}
+	
+
+
+
+
+}	
