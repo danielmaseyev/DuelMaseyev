@@ -2,20 +2,32 @@ package duelMaseyev;
 
 public class CharacterA implements Dueler
 {
-	public CharacterA()
-	{
-		
+	int life;
+	public class CharacterA() {
+
 	}
-	public void taunt()
-	{
-		System.out.print("Go now");
+	public void taunt() {
+		System.out.println("Go now");	
 	}
-	public String getName()
-	{
+	public String getName() {
 		return "Daniel Maseyev";
 	}
-	public setStartingHP() {
-		return hp;
-		
+
+	public void setStartingHP(int hp) {
+		this.life = hp;
+	}
+	public int getHp() {
+		return this.life;
+	}
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
+		if(d=hp) {
+			return true;
+		}
+	}
+	public int getAction(Object caller) {
+		return caller instanceof a ;
+	}
+	public void hit(Object caller) {
+		return true;
 	}
 }
