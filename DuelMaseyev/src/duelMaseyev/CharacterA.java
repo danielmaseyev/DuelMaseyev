@@ -16,7 +16,7 @@ public CharacterA() {
 	public void setStartingHP(int hp) {
 		this.life = hp;
 	}
-	public int getHp() {
+	public int getHP() {
 		return this.life;
 	}
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
