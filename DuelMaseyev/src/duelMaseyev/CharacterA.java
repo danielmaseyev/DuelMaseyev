@@ -3,7 +3,7 @@ package duelMaseyev;
 public class CharacterA implements Dueler
 {
 	int life;
-	public class CharacterA() {
+	public CharacterA() {
 
 	}
 	public void taunt() {
@@ -30,4 +30,5 @@ public class CharacterA implements Dueler
 	public void hit(Object caller) {
 		return true;
 	}
+	
 }
