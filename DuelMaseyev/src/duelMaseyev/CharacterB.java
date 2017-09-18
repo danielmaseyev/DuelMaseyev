@@ -3,6 +3,7 @@ package duelMaseyev;
 public class CharacterB implements Dueler{
 	
 	int life;
+	boolean isStartGame = true;
 	public CharacterB() {
 
 	}
@@ -14,7 +15,10 @@ public class CharacterB implements Dueler{
 	}
 
 	public void setStartingHP(int hp) {
-		this.life = hp;
+		if(isStartGame==true) {
+			this.life = hp;
+			isStartGame=false;
+		}
 	}
 	public int getHP() {
 		return this.life;
@@ -22,7 +26,7 @@ public class CharacterB implements Dueler{
 	
 	//START WORK HERE
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		if(d=hp) {
+		if(d = hp) {
 			return true;
 		}
 	}
