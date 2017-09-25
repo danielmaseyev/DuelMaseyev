@@ -28,6 +28,6 @@ public CharacterA() {
 		return caller instanceof a ;
 	}
 	public void hit(Object caller) {
-		return true;
+		this.life = this.life - 20;
 	}
 }
