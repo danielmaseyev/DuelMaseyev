@@ -53,6 +53,8 @@ public class CharacterB implements Dueler{
 					isLoading=false;
 				}
 			}
+		}
+		return Duel.YEAH_RIGHT;
 			
 		}
 	public void hit(Object caller) {
