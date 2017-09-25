@@ -35,7 +35,7 @@ public class CharacterB implements Dueler{
 		return caller instanceof a ;
 	}
 	public void hit(Object caller) {
-		this.life = this.life-20
+		this.life = this.life-20;
 	}
 
 
