@@ -46,7 +46,7 @@ public class CharacterB implements Dueler{
 			}
 			else {
 				if(Math.random()>0.5) {
-					return Duel.GUARDING
+					return Duel.GUARDING;
 				}
 				else {
 					return Duel.SHOOTING;
