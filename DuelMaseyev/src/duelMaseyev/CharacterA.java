@@ -3,9 +3,11 @@ package duelMaseyev;
 public class CharacterA implements Dueler
 {
 	int life;
+	private boolean isLoaded;
+
 public CharacterA() 
 	{
-
+		isLoaded = false;
 	}
 	public void taunt() 
 	{
@@ -34,7 +36,31 @@ public CharacterA()
 	}
 	public int getAction(Object caller) 
 	{
-		return caller instanceof a ;
+		if(caller instanceof Dueler)
+		{
+			if(isLoaded==false)
+			{
+				if(Math.random()>0.5)
+				{
+					return Duel.GUARDING;
+				}
+				else
+				{
+					isLoaded = true;
+					return Duel.LOADING;
+				}		
+			}
+			else if (Math.random()>0.5)
+			{
+				return Duel.GUARDING;
+			}
+			else
+			{
+				isLoaded = false;
+				return Duel.SHOOTING;
+			}
+		}
+		return Duel.YEAH_RIGHT;
 	}
 	public void hit(Object caller) 
 	{

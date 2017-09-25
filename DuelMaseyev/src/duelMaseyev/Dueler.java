@@ -1,8 +1,7 @@
 package duelMaseyev;
 
-import duel.Dueler;
-
-//period 4
+import Duel.Dueler;
+//period 9
 
 public interface Dueler {
 
