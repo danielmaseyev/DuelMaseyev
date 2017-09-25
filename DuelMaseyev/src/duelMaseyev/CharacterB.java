@@ -26,15 +26,16 @@ public class CharacterB implements Dueler{
 	
 	//START WORK HERE
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		if(d = hp) {
+		if(d.getHP()==hp) {
 			return true;
 		}
+		return false;
 	}
 	public int getAction(Object caller) {
 		return caller instanceof a ;
 	}
 	public void hit(Object caller) {
-		return true;
+		this.life = this.life-20
 	}
 
 
