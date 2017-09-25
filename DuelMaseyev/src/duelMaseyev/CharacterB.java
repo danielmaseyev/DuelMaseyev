@@ -50,6 +50,7 @@ public class CharacterB implements Dueler{
 				}
 				else {
 					return Duel.SHOOTING;
+					isLoading=false;
 				}
 			}
 			
