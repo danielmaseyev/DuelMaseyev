@@ -2,8 +2,9 @@ package attendance;
 
 public class Student implements Attendee
 {
-	String first;
-	String last;
+	private String first;
+	private String last;
+	private boolean present;
 	public Student(String firstName, String lastName)
 	{
 		this.first = firstName;
@@ -12,30 +13,59 @@ public class Student implements Attendee
 	}
 	public boolean isPresent()
 	{
-
+		if (present)
+		{
+			return true;
+		}
+		return false;
 	}
 	public void setPresent(boolean present)
 	{
-
+		this.present = isPresent();
 	}
 	public String getFirstName()
 	{
-
+		return first;
 	}
 	public String getLastName()
 	{
-
+		return last;
 	}
-	public boolean mathces(String first, String last)
+	public boolean mathces(String first)
 	{
+		if (first == this.first)
+		{	
+			return true;
+		}	
+		return false;
+	}	
 
-	}
 	public boolean matches(String last)
 	{
-
+		if (last == this.last)
+		{	
+			return true;
+		}	
+		return false;
 	}
 	public String getReportString()
 	{
-
+		String t = last;
+		while(t.length()<20)
+		{
+			t+="";
+		}
+		t+= first;
+		while(t.length()<40)
+		{
+			t+="";
+		}
+		if(present=true)
+		{
+			t+= "PRESENT";
+		}
+		t+= "ABSENT";
+		return t;
 	}
+	
 }
