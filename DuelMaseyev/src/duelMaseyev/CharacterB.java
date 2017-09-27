@@ -30,7 +30,10 @@ public class CharacterB implements Dueler{
 		if(d.getHP()==hp) {
 			return true;
 		}
-		return false;
+		else{
+			return false;
+		}
+		
 	}
 	public int getAction(Object caller) {
 		if(caller instanceof Dueler) {
@@ -54,11 +57,16 @@ public class CharacterB implements Dueler{
 				}
 			}
 		}
-		return Duel.YEAH_RIGHT;
+		else {
+			return Duel.YEAH_RIGHT;
+			}
 			
 		}
 	public void hit(Object caller) {
-		this.life = this.life-20;
+		if(caller instanceof Dueler) 
+		{
+			this.life = this.life-20;
+		}
 	}
 
 

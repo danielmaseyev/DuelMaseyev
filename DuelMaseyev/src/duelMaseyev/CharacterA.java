@@ -50,17 +50,22 @@ public CharacterA()
 					return Duel.LOADING;
 				}		
 			}
-			else if (Math.random()>0.5)
-			{
-				return Duel.GUARDING;
-			}
 			else
 			{
-				isLoaded = false;
-				return Duel.SHOOTING;
-			}
+				 if(Math.random()>0.5) 
+				 {
+					 return Duel.GUARDING;
+				 }
+				 else
+				 {
+					isLoaded = false;
+					return Duel.SHOOTING;
+				}
+			}	 
 		}
+		else {
 		return Duel.YEAH_RIGHT;
+		}
 	}
 	public void hit(Object caller) 
 	{
