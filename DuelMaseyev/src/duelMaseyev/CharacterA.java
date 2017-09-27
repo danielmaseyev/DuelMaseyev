@@ -52,15 +52,9 @@ public CharacterA()
 			}
 			else
 			{
-				 if(Math.random()>0.5) 
-				 {
-					 return Duel.GUARDING;
-				 }
-				 else
-				 {
 					isLoaded = false;
 					return Duel.SHOOTING;
-				}
+				
 			}	 
 		}
 		else {
