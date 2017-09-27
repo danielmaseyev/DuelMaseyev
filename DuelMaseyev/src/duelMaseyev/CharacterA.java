@@ -69,7 +69,7 @@ public CharacterA()
 	}
 	public void hit(Object caller) 
 	{
-		if(caller instanceof Dueler) 
+		if(caller instanceof Duel) 
 			{
 				this.life = this.life - 20;
 			}
