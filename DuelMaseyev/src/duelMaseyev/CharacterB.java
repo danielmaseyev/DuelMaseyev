@@ -83,7 +83,7 @@ public class CharacterB implements Dueler {
  
         if(caller instanceof Duel ) {
  
-            hp = hp - 20;
+            hp = hp - 10;
  
  
         }
