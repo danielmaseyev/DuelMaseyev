@@ -17,9 +17,9 @@ public class CharacterB implements Dueler{
 	}
 
 	public void setStartingHP(int hp) {
-		if(isStartGame==true) {
+		if(isStartGame==false) {
 			this.life = hp;
-			isStartGame=false;
+			isStartGame=true;
 		}
 	}
 	public int getHP() {
