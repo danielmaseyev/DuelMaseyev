@@ -5,7 +5,7 @@ public class CharacterA implements Dueler
 	int hp;
 	private boolean isLoaded;
 
-public CharacterA() 
+	public CharacterA() 
 	{
 		isLoaded = false;
 	}
@@ -52,22 +52,26 @@ public CharacterA()
 			}
 			else
 			{
+				if(Math.random() < 0.5) {
 				
-					isLoaded = false;
-					return Duel.SHOOTING;
-				
+				isLoaded = false;
+				return Duel.SHOOTING;
+				}
+				else {
+					return Duel.GUARDING;
+				}
 			}
 		}
-			
+
 		else {
-		return Duel.YEAH_RIGHT;
+			return Duel.YEAH_RIGHT;
 		}
 	}
 	public void hit(Object caller) 
 	{
 		if(caller instanceof Duel) 
-			{
-			hp = hp - 20;
-			}
+		{
+			hp = hp - 10;
+		}
 	}
 }
