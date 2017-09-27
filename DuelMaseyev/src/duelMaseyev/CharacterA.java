@@ -65,7 +65,7 @@ public CharacterA()
 	{
 		if(caller instanceof Duel) 
 			{
-				this.life = this.life - 20;
+			life = life - 20;
 			}
 	}
 }
