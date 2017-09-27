@@ -64,6 +64,9 @@ public CharacterA()
 	}
 	public void hit(Object caller) 
 	{
-		this.life = this.life - 20;
+		if(caller instanceof Dueler) 
+			{
+				this.life = this.life - 20;
+			}
 	}
 }
