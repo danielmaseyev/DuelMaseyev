@@ -36,7 +36,7 @@ public CharacterA()
 	}
 	public int getAction(Object caller) 
 	{
-		if(caller instanceof Dueler)
+		if(caller instanceof Duel)
 		{
 			if(isLoaded==false)
 			{
