@@ -36,7 +36,7 @@ public class CharacterB implements Dueler{
 		
 	}
 	public int getAction(Object caller) {
-		if(caller instanceof Dueler) {
+		if(caller instanceof Duel) {
 			if(isLoaded==false)
 			{
 				if(Math.random()>0.5) {
