@@ -4,11 +4,11 @@ public class CharacterB implements Dueler {
     private String name;
     private String taunt;
     private int hp;
-    private boolean dloaded;
+    private boolean isLoaded;
  
     public CharacterB () {
  
-        dloaded = false;
+        isLoaded = false;
  
     }
  
@@ -51,11 +51,11 @@ public class CharacterB implements Dueler {
  
         if(caller instanceof Duel ) {
  
-            if(dloaded == false){
+            if(isLoaded == false){
  
                
                 if(Math.random() < .5) {
-                    dloaded = true;
+                    isLoaded = true;
                     return Duel.LOADING;
  
                 }else {
@@ -66,8 +66,7 @@ public class CharacterB implements Dueler {
             }
  
             else {
-               
-                dloaded = false;
+                isLoaded = false;
                 return Duel.SHOOTING;
                
             }
@@ -84,7 +83,7 @@ public class CharacterB implements Dueler {
  
         if(caller instanceof Duel ) {
  
-            hp = hp - 10;
+            hp = hp - 20;
  
  
         }
