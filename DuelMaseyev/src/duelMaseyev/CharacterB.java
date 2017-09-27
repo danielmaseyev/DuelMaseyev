@@ -49,8 +49,8 @@ public class CharacterB implements Dueler{
 					return Duel.GUARDING;
 				}
 				else {
+					isLoaded=false;
 					return Duel.SHOOTING;
-					isLoading=false;
 				}
 			}
 		}
