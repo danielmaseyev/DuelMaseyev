@@ -25,7 +25,7 @@ public class Student implements Attendee
 	}
 	public String getFirstName()
 	{
-		return first;
+		return first; 
 	}
 	public String getLastName()
 	{
