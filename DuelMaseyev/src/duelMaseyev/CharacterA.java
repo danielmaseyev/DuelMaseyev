@@ -2,10 +2,12 @@ package duelMaseyev;
 
 public class CharacterA implements Dueler
 {
-	int life;
-public CharacterA() 
-	{
+	int hp;
+	private boolean isLoaded;
 
+	public CharacterA() 
+	{
+		isLoaded = false;
 	}
 	public void taunt() 
 	{
@@ -18,11 +20,11 @@ public CharacterA()
 
 	public void setStartingHP(int hp) 
 	{
-		this.life = hp;
+		this.hp = hp;
 	}
 	public int getHP() 
 	{
-		return this.life;
+		return hp;
 	}
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) 
 	{
@@ -34,10 +36,42 @@ public CharacterA()
 	}
 	public int getAction(Object caller) 
 	{
-		return caller instanceof a ;
+		if(caller instanceof Duel)
+		{
+			if(isLoaded==false)
+			{
+				if(Math.random()>0.5)
+				{
+					return Duel.GUARDING;
+				}
+				else
+				{
+					isLoaded = true;
+					return Duel.LOADING;
+				}		
+			}
+			else
+			{
+				if(Math.random() < 0.5) {
+				
+				isLoaded = false;
+				return Duel.SHOOTING;
+				}
+				else {
+					return Duel.GUARDING;
+				}
+			}
+		}
+
+		else {
+			return Duel.YEAH_RIGHT;
+		}
 	}
 	public void hit(Object caller) 
 	{
-		this.life = this.life - 20;
+		if(caller instanceof Duel) 
+		{
+			hp = hp - 10;
+		}
 	}
 }
