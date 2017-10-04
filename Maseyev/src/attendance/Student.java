@@ -9,19 +9,16 @@ public class Student implements Attendee
 	{
 		this.first = firstName;
 		this.last = lastName;
+		present = false;
 				
 	}
 	public boolean isPresent()
 	{
-		if (present)
-		{
-			return true;
-		}
-		return false;
+		return present;
 	}
 	public void setPresent(boolean present)
 	{
-		this.present = isPresent();
+		this.present = present;
 	}
 	public String getFirstName()
 	{
@@ -33,11 +30,8 @@ public class Student implements Attendee
 	}
 	public boolean matches(String first, String last)
 	{
-		if(this.first.equals(first) && this.last.equals(last)) 
-		{	
-			return true;	
-		}
-		return false;
+	
+		return first.toLowerCase().equals(first.toLowerCase()) && last.toLowerCase().equals(last.toLowerCase());
 	}	
 
 	public boolean matches(String last)
