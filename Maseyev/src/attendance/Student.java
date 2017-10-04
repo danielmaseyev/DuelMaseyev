@@ -31,34 +31,30 @@ public class Student implements Attendee
 	{
 		return last;
 	}
-	public boolean mathces(String first)
+	public boolean matches(String first, String last)
 	{
-		if (first == this.first)
+		if(this.first.equals(first) && this.last.equals(last)) 
 		{	
-			return true;
-		}	
+			return true;	
+		}
 		return false;
 	}	
 
 	public boolean matches(String last)
 	{
-		if (last == this.last)
-		{	
-			return true;
-		}	
-		return false;
+		return last.toLowerCase().equals(last.toLowerCase());
 	}
 	public String getReportString()
 	{
 		String t = last;
 		while(t.length()<20)
 		{
-			t+="";
+			t+=" ";
 		}
 		t+= first;
 		while(t.length()<40)
 		{
-			t+="";
+			t+=" ";
 		}
 		if(present=true)
 		{

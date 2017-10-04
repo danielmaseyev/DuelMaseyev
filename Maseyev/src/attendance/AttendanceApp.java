@@ -125,7 +125,7 @@ public class AttendanceApp {
 
 	public boolean notFound(String first, String last) {
 		for(int i = 0; i < students.length; i++){
-			if(students[i].mathces(first)){
+			if(students[i].matches(first)){
 				return false;
 			}
 		}
